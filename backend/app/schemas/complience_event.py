@@ -8,6 +8,7 @@ class ComplianceEventCreate(BaseModel):
     status: str
     area: str
     evidence_url: Optional[str] = None
+    batch_id: Optional[int] = None
 
 
 class ComplianceEventResponse(BaseModel):
@@ -18,6 +19,7 @@ class ComplianceEventResponse(BaseModel):
     status: str
     area: str
     evidence_url: Optional[str]
+    batch_id: Optional[int]
 
     class Config:
         from_attributes = True

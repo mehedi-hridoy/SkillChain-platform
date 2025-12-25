@@ -4,6 +4,8 @@ from app.db.session import engine
 from app.models.factory import Factory
 from app.models.user import User
 from app.models.complience_event import ComplianceEvent
+from app.models.product import Product
+from app.models.batch import Batch
 
 def init_db():
     Base.metadata.create_all(bind=engine)
